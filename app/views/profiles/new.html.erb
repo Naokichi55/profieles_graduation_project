@@ -1,7 +1,4 @@
-<div>
-  <%= user.name %>
-</div>
-<% form_with model: @profile, class: new_profile do |f| %>
+<%= form_with model: @profile, class: 'new_profile' do |f| %>
 <div>
   <%= f.label  '愛用ラケット' %>
   <%= f.text_field :racket %>
@@ -26,5 +23,7 @@
   <%= f.label '性別' %>
 	<%= f.text_field :gender %>
 </div>
-
-
+<div>
+  <%= f.submit '投稿' %>
+</div>
+<% end %>
