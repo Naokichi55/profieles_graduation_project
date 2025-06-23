@@ -1,0 +1,29 @@
+<%= form_with model: @profile, class: 'new_profile' do |f| %>
+<div>
+  <%= f.label  '愛用ラケット' %>
+  <%= f.text_field :racket %>
+</div>
+<div>
+  <%= f.label  'テニス歴' %>
+  <%= f.text_field :history %>
+</div>
+<div>
+  <%= f.label 'プレースタイル' %>
+	<%= f.text_field :play_style %>
+</div>
+<div>
+  <%= f.label 'レベル' %>
+	<%= f.text_field :level %>
+</div>
+<div>
+  <%= f.label '年代' %>
+  <%= f.text_field :generation %>
+</div>
+<div>
+  <%= f.label '性別' %>
+	<%= f.text_field :gender %>
+</div>
+<div>
+  <%= f.submit '投稿' %>
+</div>
+<% end %>
